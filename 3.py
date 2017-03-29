@@ -1,6 +1,5 @@
 while True:
     try:
-        x=[]
         y=str()
         z=str()
         x=raw_input()
@@ -11,11 +10,13 @@ while True:
             else:
                 y+=x[i]
         y+='d'
+        print (y)
         for i in range(len(y)-1):
             if y[i]==y[i+1] or y[i]==y[i-1]:
                 pass
             else:
                 z+=y[i]
+        print (z)
         if len(z)==0:
             print (len(x)-1)
         else:
