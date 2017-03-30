@@ -55,6 +55,7 @@ while True:
                         s=y
                         y=x
                         x=s
+                    print (x)
                     if len(x)==0:
                         ans1 = len(a)+1
                     else:
