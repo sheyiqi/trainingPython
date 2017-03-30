@@ -28,24 +28,25 @@ def isOne(a):
 while True:
     try:
         a=raw_input()
-        print (a)
         y=trantotwo(a)
-        x=str[]
+        x=str()
         while (len(x)!=len(y)):
             x=twotrantonone(y)
             z=y
             y=x
             x=z
+#        print (str('x:')+x)
         if len(x)==0:
             print (len(a)+1)
         else:
             z=x
             z+='dd'
+#            print (str('z:')+z)
             for i in range(len(z)-2):
+#                print (i)
                 if z[i]==z[i+2]:
-                    y=z[:i+2]+z[i+1]+z[i+1:-1]
-                    print (z)
-                    print (y)
+                    y=z[:i+2]+z[i+1:-1]
+#                    print (str('y:')+y)
                     z=str()
                     while (len(x)!=len(y)):
                         x=twotrantonone(y)
@@ -56,9 +57,10 @@ while True:
                         print (len(a)+1)
                     else:
                         print (len(a)-len(z))
-                        break
-        print (z)
-        print (len(x)-len(z)+2)
+                    break
+                if i==len(z)-3:
+#                    print (z[:-2])
+                    print (len(a)-len(z)+4)
 
     except EOFError:
         break
