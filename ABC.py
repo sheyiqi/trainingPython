@@ -56,7 +56,7 @@ while True:
                     if len(x)==0:
                         print (len(a)+1)
                     else:
-                        print (len(a)-len(z))
+                        print (len(a)-len(z)+1)
                     break
                 if i==len(z)-3:
 #                    print (z[:-2])
